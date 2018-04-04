@@ -37,7 +37,9 @@
 			<div class="col-7"><p th:text="${mahasiswa.jalurMasuk}"> </p></div>
 			<div class="col-5"><p><strong>Status</strong></p></div>
 			<div class="col-7"><p th:text="${mahasiswa.status}"> </p></div>
-			<div class="col-5"></div>
+			<div class="col-5"> <form th:action="'/mahasiswa/ubah/'+${mahasiswa.npm}">
+        	<button class="btn btn-primary" type="submit" name="action" value="save">Update</button>
+        </form></div>
 			
 		</div>
 	</div>
